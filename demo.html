@@ -34,16 +34,22 @@
     <p><a href="https://github.com/idoco/intergram">More information...</a></p>
 </div>
 
-<script>
-    window.intergramId = 312940879;
-    window.intergramServer = window.location.origin;
+<script> 
+    window.intergramId = "-436157351"
+    window.intergramServer = "https://hsl-dados-clinicos-telegram.herokuapp.com/"
     window.intergramCustomizations = {
-        closedChatAvatarUrl: 'media/demo_avatar.jpg',
-        introMessage: 'Hello! How can I help you?',
+        closedChatAvatarUrl: 'https://i.imgur.com/qxDYsxt.jpg',
+        titleOpen: 'Chat - Squad Dados Clínicos',
+        introMessage: 'First message when the user opens the chat for the first time',
+        autoResponse: 'A message that is sent immediately after the user sends its first message',
+        autoNoResponse: 'A message that is sent one minute after the user sends its first message ' +
+                        'and no response was received',
+        mainColor: "#000", // Can be any css supported color 'red', 'rgb(255,87,34)', etc
         closedStyle: 'button', // button or chat
+        placeholderText: 'Escreva sua mensagem...'
     };
 </script>
-<script src="/js/widget.js"></script>
+<script id="intergram" type="text/javascript" src="https://hsl-dados-clinicos-telegram.herokuapp.com//js/widget.js"></script>
 
 </body>
 </html>
